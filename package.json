@@ -1,0 +1,17 @@
+{
+  "name": "arjunadiazgranados",
+  "private": true,
+  "description": "portfolioarjuna",
+  "version": "0.1.0",
+  "author": "Arjuna <arjunafitness@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arjunafit/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arjunafit/Portfolio.git"
+  }
+}
