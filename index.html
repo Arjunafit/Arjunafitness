@@ -39,10 +39,13 @@
           <a href=""><ion-icon name="logo-github"></ion-icon></a>
           <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
+        <div class="whatsapp">
+          <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
         <div class="title">
           <h1>Soy Arjuna</h1>
           <h2>Freelance</h2>
-          <h3>Frontend Developer</h3>
+          <h3>Desarrolador Web</h3>
         </div>
       </div>
     </main>
@@ -50,26 +53,83 @@
     <section id="about">
       <div class="container">
         <div class="title">
-          <h1>Soy Frontend Developer</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <h1>Soy Desarrolador Web</h1>
 
-          <div class="box-title">
-            <p>90%</p>
-            <div class="b1"><div class="b2"></div></div>
-            <span>HTML</span>
+          <p>Me apasiona desarrollar</p>
+        </div>
+      </div>
 
-            <p>85%</p>
-            <div class="b1"><div class="b3"></div></div>
-            <span>CSS</span>
+      <div class="skills-charts">
+        <div id="myCanvasContainer">
+          <canvas width="500" height="500" id="myCanvas">
+            <ul id="tags">
+              <li><a href="#" target="_blank">HTML</a></li>
+              <li><a href="#" target="_blank">CSS</a></li>
+              <li><a href="#" target="_blank">ES5</a></li>
+              <li><a href="#" target="_blank">TypeScript</a></li>
+              <li><a href="#" target="_blank">REST</a></li>
+              <li><a href="#" target="_blank">JSON</a></li>
+              <li><a href="#" target="_blank">GSAP</a></li>
+              <li><a href="#" target="_blank">Data Science</a></li>
+              <li><a href="#" target="_blank">Wordpress</a></li>
+              <li><a href="#" target="_blank">PHP</a></li>
+              <li><a href="#" target="_blank">Python</a></li>
+              <li><a href="#" target="_blank">Node JS</a></li>
+              <li><a href="#" target="_blank">Git</a></li>
+              <li><a href="#" target="_blank">_lodash</a></li>
+              <li><a href="#" target="_blank">SASS</a></li>
+              <li><a href="#" target="_blank">JQuery</a></li>
+              <li><a href="#" target="_blank">SQI</a></li>
+              <li><a href="#" target="_blank">Gulp</a></li>
+              <li><a href="#" target="_blank">npm</a></li>
+              <li><a href="#" target="_blank">BEM</a></li>
+            </ul>
+          </canvas>
+        </div>
+      </div>
+    </section>
 
-            <p>65%</p>
-            <div class="b1"><div class="b4"></div></div>
-            <span>JavaScript</span>
+    <section id="services">
+      <div class="container">
+        <input type="radio" name="slider" id="item-1" checked />
+        <input type="radio" name="slider" id="item-2" />
+        <input type="radio" name="slider" id="item-3" />
+        <div class="cards">
+          <label class="card" for="item-1" id="song-1">
+            <img src="/img/Web.jpg" alt="" />
+            <h1>Desarrolador Web</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              assumenda eos magni porro quisquam autem? Veritatis eius magni
+              corporis, porro optio ducimus blanditiis sed dolores at aperiam
+              beatae vero sint.
+            </p>
+            <button>Ver Mas</button>
+          </label>
 
-            <p>70%</p>
-            <div class="b1"><div class="b5"></div></div>
-            <span>PHP</span>
-          </div>
+          <label class="card" for="item-2" id="song-2">
+            <img src="image/02.png" alt="" />
+            <h1>Wordpress</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              assumenda eos magni porro quisquam autem? Veritatis eius magni
+              corporis, porro optio ducimus blanditiis sed dolores at aperiam
+              beatae vero sint.
+            </p>
+            <button>Ver Mas</button>
+          </label>
+
+          <label class="card" for="item-3" id="song-3">
+            <img src="image/03.png" alt="" />
+            <h1>Redes Sociales</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              assumenda eos magni porro quisquam autem? Veritatis eius magni
+              corporis, porro optio ducimus blanditiis sed dolores at aperiam
+              beatae vero sint.
+            </p>
+            <button>Ver Mas</button>
+          </label>
         </div>
       </div>
     </section>
@@ -78,5 +138,8 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="JavaScript/particles.min.js"></script>
     <script src="JavaScript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/jquery.tagcanvas.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
