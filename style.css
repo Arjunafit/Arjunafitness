@@ -170,55 +170,6 @@ video {
     
 }
 
-.tech{
-    text-decoration: none;
-    color: #08fdd8;
-}
-/* js query */
-.section-blog{
-    width: 85%;
-    margin: 100px auto 0;
-    position: relative;
-}
-.section-blog .fake-big-2{
-    font-size: 12rem;
-    font-weight: bolder;
-    position: absolute;
-    top: -180px;
-    left: 0;
-    
-}
-
-.blog-articles{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-.post-articles{
-    width: 100%;
-    height: 220px;
-    background-color: #1d1d1d;
-    padding: 25px;
-    color: #909096;
-    box-shadow: 0 0  5px 5px #191919;
-    margin-bottom: 30px;
-}
-.post-date{
-    font-size: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-.blog-post-title h5 a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    margin: 15px 0;
-}
-.blog-post-title h5 a:hover{
-    color: #06b99e;
-}
 
 /*===== portfolio =====*/
 #services .container{
@@ -375,6 +326,7 @@ video {
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
+    z-index: 9;
 }
 #contact .content-contact .contact-right textarea{
     width: 100%;
@@ -386,6 +338,7 @@ video {
     font-weight: 600;
     outline: none;
     padding: 15px 20px;
+    z-index: 9;
 }
 /*===== Footer =====*/
 footer{
@@ -438,7 +391,7 @@ footer a{
 
     header .btn-mobile ion-icon {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     header .menu-mobile{
