@@ -24,7 +24,7 @@
       <div class="menu">
         <ul>
           <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre </a></li>
+          <li><a href="#section-about">Sobre </a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -32,7 +32,7 @@
       <div class="menu-mobile">
         <ul>
           <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Sobre </a></li>
+          <li><a href="#section-about">Sobre </a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -72,18 +72,23 @@
       </div>
     </main>
 
-    <section id="about">
-      <div class="container">
-        <div class="title">
+    <section id="section-about">
+      <div class="text-zone3">
+        <div id="header">
           <h1>Soy Desarrolador Web</h1>
 
-          <p>Me apasiona desarrollar</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            suscipit officiis labore. Enim alias laborum ipsa modi? Soluta
+            mollitia nulla tenetur blanditiis veniam? Illo animi voluptatibus
+            nostrum officiis inventore perferendis?
+          </p>
         </div>
       </div>
 
       <div class="skills-charts">
         <div id="myCanvasContainer">
-          <canvas width="500" height="500" id="myCanvas">
+          <canvas width="400" height="400" id="myCanvas">
             <ul id="tags">
               <li><a href="#" target="_blank">HTML</a></li>
               <li><a href="#" target="_blank">CSS</a></li>
@@ -172,9 +177,10 @@
           <div class="contact-right">
             <h1>Completa el formulario</h1>
             <div class="line2"></div>
-            <input type="email" placeholder="Correo Electronico" />
-            <input type="text" placeholder="Nombre" />
-            <textarea placeholder="Mensaje"></textarea>
+            <input type="email" placeholder="Correo Electronico" required />
+            <input type="text" placeholder="Nombre" required />
+            <textarea placeholder="Mensaje" required></textarea>
+            <button>Enviar</button>
           </div>
         </div>
       </div>
@@ -182,7 +188,8 @@
 
     <footer>
       <span
-        >Copyright 2022 <a href="">Arjuna || Desarrollador web</a> All Rights
+        >Copyright 2022
+        <a href="">Arjuna Diazgranados || Desarrollador web</a> All Rights
         Reserved</span
       >
     </footer>
@@ -191,8 +198,16 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="JavaScript/particles.min.js"></script>
     <script src="JavaScript/app.js"></script>
-    <script src="/jquery.tagcanvas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="/JavaScript/jquery.tagcanvas.js"></script>
     <script src="/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn-mobile").click(function () {
+          $(".menu-mobile").slideToggle("slow");
+        });
+      });
+    </script>
   </body>
 </html>

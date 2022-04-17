@@ -144,31 +144,26 @@ video {
 /*===== about =====*/
 
 
-#about .container .title{
-    width: 70%;
-    height: 100vh;
-    margin: 0 auto;
+#section-about{
+    padding-left: 1.5rem;
+    margin: 150px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
-
-#about .container .title h1{
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: left;
-}
-#about .container .title p{
-    color: #fff;
-    width: 100%;
-    margin-top: 30px;
+ .text-zone3 #header h1{
     margin-bottom: 15px;
     line-height: 1.5rem;
-    
+    color: #fff;
+
 }
+ .text-zone3 #header p{
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+    color: #fff;
+ }
 
 
 /*===== portfolio =====*/
@@ -339,6 +334,14 @@ video {
     outline: none;
     padding: 15px 20px;
     z-index: 9;
+}
+
+#contact .content-contact .contact-right button{
+    padding: 5px 50px;
+    color:white;
+    font-size: 1rem;
+    background-color: #156fc3;
+    border: 0pc
 }
 /*===== Footer =====*/
 footer{
