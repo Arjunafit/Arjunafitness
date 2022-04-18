@@ -331,29 +331,26 @@ video {
 #contact .content-contact  form.form_contact input[id=email],
 #contact .content-contact  form.form_contact input[id=names]{
     border-radius: 20px;
-    border: none;
     padding: 15px 20px;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
     z-index: 9;
-    border-bottom-color: #fff;
-    border-bottom:3px
+    box-shadow: 0 0 10px 0 rgba(21, 96, 195, 0.626);
+    border: none;
 }
 #contact .content-contact form.form_contact textarea{
     width: 100%;
     height: 120px;
     border-radius: 20px;
-    border: none;
     margin-bottom: 20px;
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
     padding: 15px 20px;
     z-index: 9;
-    border-bottom-color: #fff;
-    border-bottom:3px
+    box-shadow: 0 0 10px 0 rgba(21, 96, 195, 0.626);
 }
 
 #contact .content-contact form.form_contact input[id=btnSend]{

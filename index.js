@@ -30,7 +30,7 @@ $(document).ready(function(){
           errores += '<p>Ingrese un correo</p>';
           $('#email').css("border-bottom-color", "#F14B4B")
       } else{
-          $('#email').css("border-bottom-color", "#d1d1d1")
+          $('#email').css("box-shadow", "#d1d1d1")
       }
 
       // Validado Mensaje ==============================
@@ -61,3 +61,4 @@ $(document).ready(function(){
   });
 
 });
+
