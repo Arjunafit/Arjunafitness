@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
 *{
+
     margin: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif
@@ -294,7 +302,7 @@ video {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#contact .content-contact .line2{
+#contact .content-contact form.form_contact .line2{
     width: 485px;
     height: 3px;
     background: #fff;
@@ -309,18 +317,19 @@ video {
     font-size: 1.2rem;
     padding: 5px 0;
 }
-#contact .content-contact .contact-right{
+#contact .content-contact form.form_contact{
     width: 50%;
     display: flex;
     flex-direction: column;
     color: #fff;
+    z-index: 2;
 }
-#contact .content-contact .contact-right h1{
+#contact .content-contact form.form_contact h1{
     font-size: 2rem;
     text-transform: uppercase;
 }
-#contact .content-contact .contact-right input[type=email],
-#contact .content-contact .contact-right input[type=text]{
+#contact .content-contact  form.form_contact input[id=email],
+#contact .content-contact  form.form_contact input[id=names]{
     border-radius: 20px;
     border: none;
     padding: 15px 20px;
@@ -329,8 +338,10 @@ video {
     font-weight: 600;
     outline: none;
     z-index: 9;
+    border-bottom-color: #fff;
+    border-bottom:3px
 }
-#contact .content-contact .contact-right textarea{
+#contact .content-contact form.form_contact textarea{
     width: 100%;
     height: 120px;
     border-radius: 20px;
@@ -341,15 +352,83 @@ video {
     outline: none;
     padding: 15px 20px;
     z-index: 9;
+    border-bottom-color: #fff;
+    border-bottom:3px
 }
 
-#contact .content-contact .contact-right button{
+#contact .content-contact form.form_contact input[id=btnSend]{
     padding: 5px 50px;
     color:white;
     font-size: 1rem;
-    background-color: #156fc3;
+    background: #156fc3;
     border-radius: 20px;
+    z-index: 999;
+    cursor: pointer;
+    border: 0;
 }
+#contact .content-contact form.form_contact input[id=btnSend]:hover{
+    background: #fff;
+    color: #156fc3;
+}
+/*===== Ventana de errores  =====*/
+ .modal_wrap{
+    width: 100%;
+    height: 100vh; 
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .mensaje_modal{
+     background: #fff;
+     box-shadow: 0 0 10px 0 rgba(195, 21, 21, 0.626);
+     width: 400px;
+     padding: 30px 20px 15px;
+     z-index: 99999;
+     border-radius: 20px;
+     opacity: 0.8;
+ }
+    .mesaje_modal h3{
+     text-align: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 20px;
+     font-weight: 400;
+    }
+    .mesaje_modal h3:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #156fc3;
+        margin-top: 10px 0px 15px;
+       }
+    .mesaje_modal p{
+        font-size: 16px;
+        color: #606060;
+    }   
+    .mensaje_modal p:before{
+        content: '\f00d';
+        font-family: FontAwesome;
+        display: inline-block;
+        color: #c31515;
+        margin-right: 8px;
+    }
+    .mensaje_modal #btnClose{
+        display: inline-block;
+        padding: 3px 10px;
+        margin-top: 10px;
+        background: #c31515;
+        color: #fff;
+        border-radius: 20px;
+        border: 2px solid #814141;
+        cursor: pointer;
+    }
+
 /*===== Footer =====*/
 footer{
     width: 100%;
@@ -361,7 +440,7 @@ footer{
     top: -80px;
 }
 footer a{
-    color: #2e8b57;
+    color: rgb(12, 208, 234);
 }
 
 
