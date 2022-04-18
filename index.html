@@ -179,20 +179,32 @@
             <div class="line2"></div>
             <div class="user_info">
               <label for="names"></label>
-              <input type="text" id="names" placeholder="Nombre" required />
+              <input
+                type="text"
+                id="names"
+                placeholder="Nombre"
+                name="nombre"
+                required
+              />
 
               <label for="email"></label>
               <input
                 type="text"
                 id="email"
                 placeholder="Correo electronic"
+                name="correo"
                 required
               />
 
               <label for="mensaje"></label>
-              <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+              <textarea
+                id="mensaje"
+                placeholder="Mensaje"
+                name="mensaje"
+                required
+              ></textarea>
 
-              <input type="button" value="Enviar Mensaje" id="btnSend" />
+              <input type="submit" value="Enviar Mensaje" id="btnSend" />
             </div>
           </form>
         </div>
