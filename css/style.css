@@ -328,12 +328,24 @@ video {
     font-size: 2rem;
     text-transform: uppercase;
 }
-#contact .content-contact  form.form_contact input[id=email],
+
 #contact .content-contact  form.form_contact input[id=names]{
     border-radius: 20px;
     padding: 15px 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    z-index: 9;
+    box-shadow: 0 0 10px 0 rgba(21, 96, 195, 0.626);
+    border: none;
+}
+#contact .content-contact  form.form_contact input[id=email]{
+    width: 400px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
     font-weight: 600;
     outline: none;
     z-index: 9;
@@ -345,7 +357,7 @@ video {
     height: 120px;
     border-radius: 20px;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     outline: none;
     padding: 15px 20px;
@@ -588,7 +600,7 @@ footer a{
         width: 190px;
        
     }
-    #contact .content-contact .line2{
+    #contact .content-contact form.form_contact .line2{
         width: 360px;
         
     }
@@ -665,7 +677,7 @@ footer a{
         width: 190px;
        
     }
-    #contact .content-contact .line2{
+    #contact .content-contact form.form_contact .line2{
         width: 190px;
     }
     footer{
@@ -693,7 +705,7 @@ footer a{
 #contact .content-contact .line1{
     width: 120px;
 }
-#contact .content-contact .line2{
+#contact .content-contact form.form_contact .line2{
     width: 120px;
 }
 #contact .content-contact .contact-left ion-icon{
