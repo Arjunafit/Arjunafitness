@@ -61,4 +61,22 @@ $(document).ready(function(){
   });
 
 });
+const form = document.querySelector('.form_contact');
 
+function btnSend(e){
+    e.preventDefault();
+    names = document.querySelector('#names');
+    email = document.querySelector('#email');
+    mensaje = document.querySelector('#mensaje');
+Email.send({ 
+    SecureToken: "876c7ef1-8921-49a7-8f2f-acc0975a76a7", 
+    to: 'arjunafitness@gmail.com', 
+    From: email.value, 
+    Subject: "Contacto desde la pagina web",
+    Body: mensaje.value,  
+}).then( 
+  mensaje => alerta(mensaje) 
+);
+ 
+}
+form.addEventListener('submit', btnSend);
