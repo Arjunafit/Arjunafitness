@@ -683,7 +683,9 @@ footer a{
         padding: 15px;
         font-size: 0.8rem;
     }
-    
+    #contact .content-contact  form.form_contact input[id=email]{
+        width: auto;
+    }
    
     #contact .content-contact .line1{
         width: 190px;
